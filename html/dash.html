@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="A-UX-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="../css/dash.css">
+        <script src="https://kit.fontawesome.com/5df389ab7d.js" crossorigin="anonymous"></script>
+        <title>Dashboard</title>
+    </head>
+    <body onload="begin()">
+        <!-- VACANCIES -->
+        <section id="vacany">
+            <div class="dsh-nav">
+                <ul>
+                    <li>
+                        <a href="#vacany">
+                            <span class="l-icons">
+                                <div class="dot dt-1"></div>
+                                <div class="dot dt-2"></div>
+                                <div class="dot dt-3"></div>
+                            </span>
+                            <span class="links"><h2>JUSTICE</h2></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#vacany">
+                            <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                            <span class="links"><h2>VACANCIES</h2></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#interest">
+                            <span class="icon"><i class="fa-solid fa-lightbulb"></i></span>
+                            <span class="links"><h2>JOB INTEREST</h2></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#chat">
+                            <span class="icon"><i class="fa-solid fa-message"></i></span>
+                            <span class="links"><h2>CHATBOT</h2></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="topbar">
+                <div class="tggl" onclick="menu();">
+                    <span class="bars1"></span>
+                    <span class="bars2"></span>
+                    <span class="bars3"></span>
+                </div>
+                <div class="srch-bar">
+                    <label>
+                        <p id="user-info">WELCOME USER: </p>
+                    </label>
+                </div>
+                <div class="details">
+                    <button type="submit" id="signout">SignOut</button>
+                </div>
+            </div>
+
+            <div class="jb-vcncs">
+                <div class="map">
+                    <div id="map">
+
+                    </div>
+                </div>
+                <div class="map-info">
+                    <ul>
+                        <li>
+                            <a href="#" id="vStores">
+                                <span class="icon"><i class="fa-solid fa-store"></i></span>
+                                <span class="links"><h2>RETAIL STORES</h2></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="internships">
+                                <span class="icon"><i class="fa-regular fa-file-signature"></i></span>
+                                <span class="links"><h2>INTERNSHIPS</h2></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="vEduDepart">
+                                <span class="icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                                <span class="links" id="schools"><h2>LITERATURE</h2></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--mapinfo-->
+            </div>
+        </section>
+
+        <!-- JOB INTEREST -->
+        <section id="interest">
+                <div class="cards">
+                    <div class="witbox-ctn">
+                        <div class="wbox-1">
+                            <p class="who">YOUNGLINGS</p>
+    
+                            <img src="../img/younglings.jpg" class="wtbx-img">
+
+                            <a href="https://www.younglings.capetown/" class="jb-links">
+                                <p>www.younlings.capetown</p>
+                            </a>
+    
+                            <div class="adress">
+                                <p>31 Lower Long St, Foreshore, Cape Town, 8000</p>
+                            </div>
+                        </div>
+    
+                        <div class="wbox-2">
+                            <p class="who">CAPE ACADAMY</p>
+                                
+                            <img src="../img/download (1).jpg" class="wtbx-img">
+
+                            <a href="http://www.camst.co.za/" class="jb-links">
+                                <p>www.camst.co.za</p>
+                            </a>
+    
+                            <div class="adress">
+                                <p>Firgrove Way, Constantia, Cape Town, 7966</p>
+                            </div>
+                        </div>
+    
+                        <div class="wbox-3">
+                            <p class="who">CAPACITI</p>
+    
+                            <img src="../img/capaciti.jpg" class="wtbx-img">
+
+                            <a href="https://www.citi.org.za/capaciti/" class="jb-links">
+                                <p>www.citi.org.za</p>
+                            </a>
+    
+                            <div class="adress">
+                                <p>97 Durham Ave, Salt River, Cape Town, 7925</p>
+                            </div>
+                        </div>
+
+                        <div class="add-on">
+                            <input type="button" >
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- CHATBOT -->
+        <section id="chat" class="sort">
+            <div id="main">
+ 
+                <h2 class="h2">ChatBot</h2>
+             
+                <div id="msg">
+                    <div id="robot">
+                        <h1>JUSTICE</h1>
+                        <div class="chtdots">
+                            <div class="dot chtdt-1"></div>
+                            <div class="dot chtdt-2"></div>
+                            <div class="dot chtdt-3"></div>
+                            <div class="dot chtdt-4"></div>
+                            <div class="dot chtdt-5"></div>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="input">
+                    <input type="text" id="msg_send" placeholder="New Message"><button class="send" id="reply" onclick="talk();">Send <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCRIPT TAG/LINKS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js" 
+            integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0t4AjvUBcZzB7y3C4wMCUbOp957cl85M&callback=initMap"></script>
+        <script src="../js/firebaseDash.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/chat.js"></script>
+    </body>
+</html>

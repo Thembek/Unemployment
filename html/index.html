@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="A-UX-Compatible" content="IE=edge">
+        <title>Home page</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        <div class="hm-splash">
+            <h1 class="fade">JUSTICE</h1>
+            <div class="container">
+                <div class="dot dt-1"></div>
+                <div class="dot dt-2"></div>
+                <div class="dot dt-3"></div>
+                <div class="dot dt-4"></div>
+                <div class="dot dt-5"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="frm-bx">
+                <div class="btn-bx">
+                    <div id="btn"></div>
+                    <button type="button" class="dsgn-btn" onclick="login()">Sign In</button>
+                    <button type="button" class="dsgn-btn" onclick="register()">Register</button>
+                </div>
+
+                <div class="frm-crcls">
+                    <div class="f-dot fdt-1"></div>
+                    <div class="f-dot fdt-2"></div>
+                    <div class="f-dot fdt-3"></div>
+                </div>
+
+                <form id="login" class="dt-frm">
+                    <input type="text" class="input" placeholder="Email" id="lEmail" required>
+                    <input type="text" class="input" placeholder="Enter Password" id="lPassword" required>
+                    <button type="submit" class="sbmt-btn" id="signin">Log in</button>
+                </form>
+                <!-- Register Form -->
+                <form id="register" class="dt-frm">
+                    <input type="text" class="input" placeholder="ID number..." id="idNum" required>
+                    <input type="email" class="input" placeholder="Email" id="rEmail"required>
+                    <input type="text" class="input" placeholder="Enter Password" id="rPassword" required>
+                    <button type="submit" class="sbmt-btn" id="register">Register</button>
+                </form>
+            </div><!--frm-bx-->
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/firebaseHome.js"></script>
+    </body>
+</html>
